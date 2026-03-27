@@ -22,29 +22,51 @@ Main → Interface de linha de comando (CLI)
 📁 Estrutura do Projeto
 src/main/java/br/com/vini/
 │
+
 ├── model/
+
 │   ├── Wallet.java
+
 │   ├── AccountWallet.java
+
 │   ├── InvestmentWallet.java
+
 │   ├── Investments.java
+
 │   ├── Money.java
+
 │   └── MoneyAudit.java
+
 │
+
 ├── repository/
+
 │   ├── AccountRepository.java
+
 │   ├── InvestmentsRepository.java
+
 │   └── CommonsRepository.java
 │
 ├── exception/
+
 │   ├── AccountNotFoundException.java
+
 │   ├── NoFundsEnoughException.java
+
 │   ├── PixInUseException.java
+
 │   ├── WalletNotFoundException.java
+
 │   ├── AccountWithInvestmentException.java
+
 │   └── InvestimentNotFoundException.java
+
 │
+
 └── Main.java
+
 ⚙️ Funcionalidades
+
 💳 Contas
 Criar conta com múltiplas chaves Pix
 Depósito
