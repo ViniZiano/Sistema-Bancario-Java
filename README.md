@@ -11,6 +11,7 @@ Transferências entre contas
 Sistema de investimentos com rendimento
 Auditoria detalhada de transações
 Tratamento de exceções de negócio
+
 🧠 Arquitetura
 
 O projeto segue uma estrutura em camadas:
@@ -65,7 +66,9 @@ src/main/java/br/com/vini/
 
 └── Main.java
 
+
 ⚙️ Funcionalidades
+
 
 💳 Contas
 Criar conta com múltiplas chaves Pix
@@ -73,12 +76,15 @@ Depósito
 Saque
 Transferência entre contas
 Consulta de histórico de transações
+
 📈 Investimentos
+
 Criação de investimentos com taxa de rendimento
 Vinculação de investimento a conta
 Aplicação de dinheiro em investimento
 Resgate de valores investidos
 Atualização automática de rendimento
+
 🔍 Auditoria de Transações
 
 Cada operação gera um registro contendo:
@@ -87,11 +93,13 @@ ID da transação (UUID)
 Tipo de serviço (ACCOUNT ou INVESTMENT)
 Descrição
 Data e hora (OffsetDateTime)
+
 🛠️ Tecnologias Utilizadas
 Java 11+
 Lombok
 API de Streams
 Programação Orientada a Objetos (POO)
+
 ▶️ Como Executar
 1. Clone o repositório
 git clone https://github.com/ViniZiano/Sistema-Bancario-Java.git
@@ -99,6 +107,7 @@ git clone https://github.com/ViniZiano/Sistema-Bancario-Java.git
 javac -d out src/main/java/br/com/vini/**/*.java
 3. Execute
 java -cp out br.com.vini.Main
+
 🖥️ Menu do Sistema
 
 O sistema funciona via terminal com opções como:
@@ -111,22 +120,27 @@ O sistema funciona via terminal com opções como:
 6 - Transferir
 ...
 ⚠️ Regras de Negócio
+
 Uma conta não pode ter mais de um investimento ativo
 Não é permitido sacar valores maiores que o saldo
 Não é permitido reutilizar chave Pix
 Investimentos são removidos quando saldo chega a zero
 💡 Diferenciais do Projeto
+
 Modelagem baseada em unidades de dinheiro (Money)
 Auditoria detalhada por transação
 Separação clara de responsabilidades
 Uso de exceções customizadas
 Simulação de fluxo financeiro real
+
 🚧 Melhorias Futuras
+
  Refatoração para uso de Service Layer
  Persistência com banco de dados
  API REST com Spring Boot
  Testes automatizados (JUnit)
  Interface gráfica (Web ou Desktop)
+ 
 👨‍💻 Autor
 
 Desenvolvido por Vinicius Ziano
