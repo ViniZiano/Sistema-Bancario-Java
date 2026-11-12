@@ -339,7 +339,7 @@
   });
 
   $('yieldBtn').addEventListener('click', async () => {
-    try { await executar('/api/rendimentos', {}); } catch (err) { erroNa($('pageError'), err.message); aviso(err.message); }
+    try { await executar('/api/rendimentos', {}); } catch (err) { aviso(err.message); }
   });
 
   $('resetBtn').addEventListener('click', async () => {

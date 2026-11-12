@@ -63,7 +63,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .block-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:16px}
 .block-head h2{font-size:22px;font-weight:800}
 .head-actions{display:flex;gap:10px;flex-wrap:wrap}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
+.cards{align-items:start;display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
 .cards.small{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:14px}
 .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
