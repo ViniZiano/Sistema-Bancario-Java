@@ -32,3 +32,21 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
+// ./gradlew run     -> menu no terminal (br.com.vini.Main)
+// ./gradlew runWeb  -> site + API em http://localhost:8080 (br.com.vini.web.WebServer)
+application {
+    mainClass.set("br.com.vini.Main")
+}
+
+tasks.register<JavaExec>("runWeb") {
+    group = "application"
+    description = "Sobe o site e a API web do JavaBank"
+    classpath = sourceSets["main"].runtimeClasspath
+    mainClass.set("br.com.vini.web.WebServer")
+}
+
+// nome fixo do jar (usado pelo Dockerfile)
+tasks.jar {
+    archiveFileName.set("javabank.jar")
+}
