@@ -1,0 +1,18 @@
+# saída de build e caches do Gradle
+JavaBank/build/
+JavaBank/.gradle/
+.gradle/
+build/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+out/
+
+# sistema
+.DS_Store
+Thumbs.db
+
+# configuração local de JDK (cada máquina tem o seu caminho)
+JavaBank/gradle.properties
