@@ -5,8 +5,6 @@ Sistema bancário em **Java 21** com contas de várias chaves Pix, transferênci
 - 🖥️ **Menu no terminal** (`br.com.vini.Main`), a versão original do projeto
 - 🌐 **Site + API REST** (`br.com.vini.web.WebServer`), feitos com o servidor HTTP do próprio JDK, **sem frameworks e sem dependências externas**
 
-> 🔗 **Demo online:** _em breve (o link entra aqui depois do deploy)_
-
 ---
 
 ## 💡 Problema e solução
